@@ -17,7 +17,7 @@ steps_per_day <- aggregate(steps ~ date, activity, sum)
 with(steps_per_day, hist(steps, breaks=30))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
+![](https://github.com/alarionov/RepData_PeerAssessment1/blob/master/figure/plot1-hist-total-steps.png) 
 
 ```r
 dev.copy(png,'plot1-hist-total-steps.png')
@@ -62,7 +62,7 @@ steps_by_interval <- aggregate(steps ~ interval, activity, mean)
 with(steps_by_interval, plot(interval, steps, type='l'))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![](https://github.com/alarionov/RepData_PeerAssessment1/blob/master/figure/plot2-time-series-avg-steps.png) 
 
 ```r
 dev.copy(png,'plot2-time-series-avg-steps.png')
@@ -117,7 +117,7 @@ steps_per_day <- aggregate(steps ~ date, activity, sum)
 with(steps_per_day, hist(steps, breaks=30))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
+![](https://github.com/alarionov/RepData_PeerAssessment1/blob/master/figure/plot3-hist-total-steps-impute.png) 
 
 ```r
 dev.copy(png,'plot3-hist-total-steps-impute.png')
@@ -162,7 +162,7 @@ steps_by_interval <- aggregate(steps ~ interval+daytype, activity, mean)
 qplot(interval, steps, data=steps_by_interval, geom = 'line', facets = daytype ~ .)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png) 
+![](https://github.com/alarionov/RepData_PeerAssessment1/blob/master/figure/plot4-panel-avg-steps-by-daytype.png) 
 
 ```r
 dev.copy(png,'plot4-panel-avg-steps-by-daytype.png')
